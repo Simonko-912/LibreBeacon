@@ -20,6 +20,7 @@ BEACON_FREQ = 433800 // Change me to a ISM band or Ham radio freq
 BEACON_NAME = "RPiTX" // On ISM bands, no need to include callsing, but for non ISM do something like 'RPiTX OM3ABC'
 BEACON_LOC = "JN" // Recommend like max 6 letters of mainhead locator
 BEACON_EMAIL = "EXAMPLE AT EXAMPLE DOT COM" // Include your email, or contact, or callsign or leave empty
+PAUSE_LENGTH = 30 // seconds to wait between transmissions 
 
 # Recommended to not touch MORSE and PROSIGNS
 
@@ -183,8 +184,8 @@ def main():
             transmit(beacon_text)
         except Exception as e:
             print(f"Error: {e}")
-        print(f"Waiting 30s...")
-        time.sleep(30)
+        print(f"Waiting " + PAUSE_LENGTH + "s...")
+        time.sleep(PAUSE_LENGTH)
 
 import threading
 import time

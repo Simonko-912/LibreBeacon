@@ -173,7 +173,7 @@ def transmit(beacon_text):
     ])
 
 def main():
-    print(f"LibreBeacon starting")
+    print(f"LibreBeacon b1.0.0 starting")
     print(f"Frequency: {BEACON_FREQ} kHz")
     print(f"WPM: {WPM}")
     print(f"Location: {BEACON_LOC}")

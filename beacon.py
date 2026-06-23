@@ -21,6 +21,7 @@ BEACON_NAME = "RPiTX" // On ISM bands, no need to include callsing, but for non 
 BEACON_LOC = "JN" // Recommend like max 6 letters of mainhead locator
 BEACON_EMAIL = "EXAMPLE AT EXAMPLE DOT COM" // Include your email, or contact, or callsign or leave empty
 PAUSE_LENGTH = 30 // seconds to wait between transmissions 
+CUSTOM_TEXT = "" // a full line after the beacon name is transmitted, added here for faster access 
 
 # Recommended to not touch MORSE and PROSIGNS
 
@@ -152,9 +153,10 @@ def build_beacon():
 
     return (
         f"VVV DE {BEACON_NAME} "
+        f"{CUSTOM_TEXT} "
         f"LOC {BEACON_LOC} "
         f"CPU {cpu} "
-        f"RAM {used}/{total}MB PEAK {peak_ram}MB"
+        f"RAM {used}/{total}MB PEAK {peak_ram}MB "
         f"UP {uptime}MIN "
         f"TEMP {temp} "
         f"HUM {hum} "

@@ -36,3 +36,8 @@ Min budget: 30-45$
 1. Live audio streaming to a audio output (for example you could just transmit the raw audio over aux to a transceiver)
 2. A config.json so its easier to edit values
 3. Better installer
+
+## Sys requirements
+1. Raspberry pi zero for RPiTX (Zero 2w recommended or pi4)
+2. 256mb ram min recommended and some cache (4gb reccomended with cache for faster compiling of rpitx-ui)
+3. GPIO pin 4 connected to a wire or amp to transmit

@@ -25,6 +25,12 @@ Its a inexpensive way to make beacons (a pi zero 2w costs 15$, but i recommend a
 A single pi zero in a rough terrain can have a range of around 100m, and in perfect conditions up to 800m, but its recommended to add a filtera and a power amplifier.<br>
 You can also plug in a DHT11 temp sensor and transmit data from it.
 
+## Recommended RPiTX setup
+1. Raspberry pi zero 2w 15-25$ (Or Raspberry pi 4 4gb for around 100 to 130$ for faster compiling, and aux output and more performance)
+2. Diy or bought filter 2-8$ (There are some online, but you can simply make one at home for free if you have the components)
+3. RF amp (Some diy can do a couple milliwatts for a couple of $, but you can buy one with a few watts for 30-50$)
+Min budget: 30-45$
+
 ## Future planned features 
 
 1. Live audio streaming to a audio output (for example you could just transmit the raw audio over aux to a transceiver)
